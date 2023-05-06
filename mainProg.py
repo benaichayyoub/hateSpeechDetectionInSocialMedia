@@ -25,7 +25,7 @@ def detect_hate_speech(image_path):
     text_annotations = response.text_annotations
     
     # Check if text contains hate speech keywords
-    hate_speech_keywords = ['hate', 'racist', 'bigot', 'sexist', 'homophobic']
+    hate_speech_keywords = ['hate', 'racist', 'sexist',]
     for text in text_annotations:
         for keyword in hate_speech_keywords:
             if keyword in text.description.lower():
